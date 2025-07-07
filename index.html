@@ -1,0 +1,231 @@
+""
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - LIPE</title>
+  <link href="SANTANAZX">
+  <style>
+
+    body {
+        color: #ffffff;
+        background: url(img/tela.jpg) center/cover no-repeat fixed;
+      font-family: 'Silkscreen', serif !important
+     
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.336);
+      padding: 55px;
+      max-width: 655px;
+      margin: 158px auto;
+    backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .profile-pic {
+     border-radius: 50%;
+    height: 120px;
+    min-width: 120px;
+    -o-object-fit: cover;
+    object-fit: none;
+    width: 120px;
+    margin-top: -30px;
+}
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+    .username {
+      font-size: 2.3rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+   .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  filter: drop-shadow(0 0 5px white);
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+    .server-avatar{ 
+       width: 45px;
+        height: 45px;
+        border-radius: 12px;
+    }
+    .role {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+    .social-links a {
+      margin: 10px;
+      color: white;
+      font-size: 2rem;
+      transition: transform 0.3s;
+    }
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #00ffea;
+    }
+    .server-card {
+       display: flex;
+    align-items: center;
+    background: #111;
+    border-radius: 15px;
+    padding: 10px;
+     border: 1px solid rgba(255,255,255,0.1);
+    margin-top: -20px;
+    max-width: 500px;
+    width: 100%;
+    min-width: 320px;
+    
+    .join {
+  background: #00ff90;
+  color: black;
+  font-size: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.discord-icon {
+  color: #555;
+  font-size: 0.8rem;
+}
+    }
+
+    .server-card:hover {
+       display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    max-width: 500px;
+    width: 100%;
+    min-width: 320px;
+    
+    }
+    .location {
+      margin-top: 20px;
+      font-size: 0.7rem;
+      color: #ccc;
+    }
+    .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+  margin-top: 40px;
+    }
+    .server-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  color: #ccc;
+   
+    }
+    @keyframes fadeIn {
+      from {opacity:0}
+      to {opacity:1}
+    }
+    @keyframes pulse {
+      0% {box-shadow: 0 0 5px red;}
+      50% {box-shadow: 0 0 20px red;}
+      100% {box-shadow: 0 0 5px red;}
+    }
+    .type-cursor {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-left: 2px;
+    animation: blink 0.7s steps(1) infinite;
+    text-shadow: 0 0 8px #fff, 0 0 20px #fff;
+  }
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  </style>
+ 
+</head>
+<body>
+  <audio id="bgMusic" src="music/adore.mp3" autoplay loop hidden></audio>
+  
+  <div class="card">
+    <div class="profile-header">
+      <img class="profile-pic" src="img/b1.jpg">
+      <h1 class="username"><span id="typewriter"></span><span class="type-cursor">|</span></h1>
+    </div>
+    <div class="role">寒 DEVELOP SOFTWARE 寒 </div>
+    
+   <div class="card-container">
+  <div class="server-card">
+    <img src="img/veigh.jpg" class="server-avatar">
+    <div class="server-info">
+      <div class="server-name">SANTANAZX</div>
+      <div class="server-stats">EU VENCI O MUNDO</div>
+    </div>
+  </div>
+  <div class="server-card">
+    <img src="avatar2.jpg" class="server-avatar">
+    <div class="server-info">
+      <div class="server-name">LIPE リぺ</div>
+      <div class="server-stats">13 ONLINE • 190 MEMBERS</div>
+    </div>
+    <a href="https://discord.gg/ZxFScEDv" target="_blank" class="join">JOIN</a>
+    <i class="fab fa-discord discord-icon"></i>
+  </div>
+</div>
+  <div class="social-icons">
+    <a href="https://twitch.tv/seuuser" target="_blank">
+      <i class="fa-brands fa-twitch"></i>
+    </a>
+    <a href="https://rocketleague.com/seuuser" target="_blank">
+      <i class="fa-solid fa-rocket"></i>
+    </a>
+    <a href="https://discord.gg/ZxFScEDv" target="_blank">
+      <i class="fa-brands fa-discord"></i>
+    </a>
+    <a href="https://store.steampowered.com/seuuser" target="_blank">
+      <i class="fa-brands fa-steam"></i>
+    </a>
+  </div>
+</div> <!-- fechamento da div.card -->
+ 
+<style/>
+<script>
+    const text = '🥷痛み𝖇𝖊𝖎𝖏𝖔𝖘𝖒𝖊𝖑𝖎𝖌𝖆寒い🥷';
+    const typewriter = document.getElementById('typewriter');
+    let i = 0;
+    let speed = 120;
+    function typeLoop() {
+      if (i <= text.length) {
+        typewriter.textContent = text.substring(0, i);
+        i++;
+        setTimeout(typeLoop, speed);
+      } else {
+        typewriter.textContent = text;
+      }
+    }
+    typeLoop(); 
+    </script>
+</body>
+
+</html>
+
+
