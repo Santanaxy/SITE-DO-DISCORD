@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - SantanaXZ</title>
+  <link href="SANTANAZX">
+  <style>
+
+    body {
+        color: #ffffff;
+        background: url(img/tela.gif) center/cover no-repeat fixed;
+      font-family: 'Silkscreen', serif !important
+     
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.336);
+      padding: 55px;
+      max-width: 655px;
+      margin: 158px auto;
+    backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .profile-pic {
+     border-radius: 50%;
+    height: 120px;
+    min-width: 120px;
+    -o-object-fit: cover;
+    object-fit: none;
+    width: 120px;
+    margin-top: -30px;
+}
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 15x;
+      margin-bottom: 10px;
+    }
+    .username {
+      font-size: 2.3rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+   .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #af006c;
+  font-size: 2.3rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  transform: scale(1.12);
+  background: linear-gradient(90deg, #ff0080 0%, #7928ca 100%);
+  box-shadow: 0 4px 24px rgba(121,40,202,0.3);
+  color: #fff;
+}
+
+    .server-avatar{ 
+       width: 45px;
+        height: 45px;
+        border-radius: 12px;
+    }
+    .role {
+      font-size: 1.3rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .social-links a {
+      margin: 10px;
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      transition: transform 0.3s;
+    }
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #00ffea;
+    }
+    .server-card {
+       display: flex;
+    align-items: center;
+    background: #111;
+    border-radius: 15px;
+    padding: 10px;
+     border: 1px solid rgba(255,255,255,0.1);
+    margin-top: -20px;
+    max-width: 500px;
+    width: 100%;
+    min-width: 320px;
+    
+    .join {
+  background: linear-gradient(90deg, #b732f9 0%, #af24f5 100%);
+  color: #dedede;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,255,144,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.discord-icon {
+  color: #555;
+  font-size: 0.8rem;
+}
+    }
+
+    .server-card:hover {
+       display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: none;
+    max-width: 500px;
+    width: 100%;
+    min-width: 320px;
+    
+    }
+    .location {
+      margin-top: 20px;
+      font-size: 0.7rem;
+      color: #ccc;
+    }
+    .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+  margin-top: 40px;
+    }
+    .server-info {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  color: #ccc;
+   
+    }
+    @keyframes fadeIn {
+      from {opacity:0}
+      to {opacity:1}
+    }
+    @keyframes pulse {
+      0% {box-shadow: 0 0 5px red;}
+      50% {box-shadow: 0 0 20px red;}
+      100% {box-shadow: 0 0 5px red;}
+    }
+    .type-cursor {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-left: 2px;
+    animation: blink 0.7s steps(1) infinite;
+    text-shadow: 0 0 8px #fff, 0 0 20px #fff;
+  }
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  </style>
+ 
+</head>
+<body>
+  <audio id="bgMusic" src="music/livinho.mp3" autoplay loop hidden></audio>
+  
+  <div class="card">
+    <div class="profile-header">
+      <img class="profile-pic" src="img/foto.gif">
+      <h1 class="username"><span id="typewriter"></span><span class="type-cursor">|</span></h1>
+    </div>
+    <div class="role">寒 DEVELOP SOFTWARE 寒 </div>
+   <div class="card-container">
+  <div class="server-card">
+    <img src="img/playlist.jpg" class="server-avatar">
+    <div class="server-info">
+      <div class="server-name">SPOTIFY</div>
+      <div class="server-stats">SantanaXZ</div>
+    </div>
+    <a href="https://open.spotify.com/playlist/5ITaO1AmRUY7OdIPugq3At" target="_blank" class="join">JOIN</a>
+    <i class="fab fa-discord discord-icon"></i>
+  </div>
+  <div class="server-card">
+    <img src="img/discord.jpg" class="server-avatar">
+    <div class="server-info">
+      <div class="server-name">xSULDOESx</div>
+      <div class="server-stats">30 ONLINE • 550 MEMBERS</div>
+    </div>
+    <a href="https://discord.gg/hAux5fQr" target="_blank" class="join">JOIN</a>
+    <i class="fab fa-discord discord-icon"></i>
+</div>
+
+    </div>
+    <div class="social-icons">
+  <a href="https://www.instagram.com/vt.santanax" target="_blank" aria-label="Instagram">
+    <img src="img/instragram.jpg" alt="Instagram" class="social-img" />
+  </a>
+  <a href="https://github.com/Santanaxy" target="_blank" aria-label="GitHub">
+    <img src="img/github.jpg" alt="GitHub" class="social-img" />
+  </a>
+  <a href="https://www.linkedin.com/in/victor-santana-2a0001306" target="_blank" aria-label="LinkedIn">
+    <img src="img/linkedin.jpg" alt="LinkedIn" class="social-img" />
+  </a>
+</div>
+  </div>
+  
+  <style>
+  /* aqui entra seu CSS normal */
+  body {
+    color: #ffffff;
+    background: url("img/tela.gif") center/cover no-repeat fixed;
+    font-family: 'Silkscreen', serif !important;
+  }
+  .social-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+.social-icons a:hover .social-img {
+  transform: scale(1.12);
+  box-shadow: 0 4px 24px rgba(121,40,202,0.3);
+}
+</style>
+
+<!-- seu script organizado -->
+<script>
+  const text = '🥷痛み𝖇𝖊𝖎𝖏𝖔𝖘𝖒𝖊𝖑𝖎𝖌𝖆寒い🥷';
+  const typewriter = document.getElementById('typewriter');
+  let i = 0;
+  let speed = 120;
+
+  function typeLoop() {
+    if (i <= text.length) {
+      typewriter.textContent = text.substring(0, i);
+      i++;
+      setTimeout(typeLoop, speed);
+    } else {
+      typewriter.textContent = text;
+    }
+  }
+  
+  typeLoop();
+</script>
+
+</html>
+
+
